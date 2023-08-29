@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <!-- now client is connected to server , we placed it before client script -->
+    <!-- defer lagane se hamari script tb run hogi jb dom load hojegi vrna neeche  lagani pdti script -->
+    <title>RCHAT</title>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="/image.png" alt="">
+    </nav>
+    <div class="container">
+        <!-- <div class="message left">Rahul : How are you </div>
+        <div class="message right">Shivji : Great What about you</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp" placeholder="write your message">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
